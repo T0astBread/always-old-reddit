@@ -1,0 +1,22 @@
+{
+	"manifest_version": 2,
+	"name": "always-old-reddit",
+	"description": "Redirects (www.)reddit.com to old.reddit.com",
+	"version": "1.0",
+	"background": {
+		"scripts": [
+			"background.js"
+		]
+	},
+	"permissions": [
+		"webRequest",
+		"webRequestBlocking",
+		"*://reddit.com/*",
+		"*://www.reddit.com/*"
+	],
+	"applications": {
+		"gecko": {
+			"id": "always-old-reddit@t0ast.cc"
+		}
+	}
+}
